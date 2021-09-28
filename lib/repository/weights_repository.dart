@@ -49,6 +49,7 @@ class WeightRepository {
   }
 
   Future<List<WeightModel>> getAllWeightEntries() async {
+    if (currentuser == null) FirebaseAuth.instance.currentUser;
     final snapshots = await _firestore
         .collection('users')
         .doc(currentuser?.uid)

@@ -3,6 +3,7 @@
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:form_app/repository/auth_repository.dart';
+import 'package:form_app/repository/weights_repository.dart';
 import 'package:form_app/screen/common/snackbar.dart';
 
 class AuthProvider extends ChangeNotifier {

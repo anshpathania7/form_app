@@ -47,6 +47,8 @@ class AuthRepository {
 
   Future<void> logout() async {
     //
+
     await _firebaseAuth.signOut();
+    WeightRepository().currentuser = null;
   }
 }
