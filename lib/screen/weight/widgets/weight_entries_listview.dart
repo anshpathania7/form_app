@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:form_app/models/weight_model.dart';
 import 'package:form_app/provider/weight_provider.dart';
-import 'package:form_app/screen/widgets/update_delete_dialog.dart';
+import 'package:form_app/screen/weight/widgets/update_delete_dialog.dart';
 
 class WeightEntriesListview extends StatelessWidget {
   final List<WeightModel> weights;

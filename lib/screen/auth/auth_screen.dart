@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:form_app/provider/auth_provider.dart';
-import 'package:form_app/screen/weight_screen.dart';
+import 'package:form_app/screen/weight/weight_screen.dart';
 import 'package:provider/provider.dart';
 
 class AuthScreen extends StatefulWidget {

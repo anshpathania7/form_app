@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:form_app/models/weight_model.dart';
 import 'package:form_app/provider/weight_provider.dart';
-import 'package:form_app/screen/widgets/enter_weight_dialog_card.dart';
+
+import 'enter_weight_dialog_card.dart';
 
 class UpdateDeleteDialog extends StatelessWidget {
   final WeightProvider provider;

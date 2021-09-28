@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:form_app/provider/auth_provider.dart';
 import 'package:form_app/provider/weight_provider.dart';
-import 'package:form_app/screen/widgets/enter_weight_dialog_card.dart';
-import 'package:form_app/screen/widgets/weight_entries_listview.dart';
+import 'package:form_app/screen/weight/widgets/enter_weight_dialog_card.dart';
+import 'package:form_app/screen/weight/widgets/weight_entries_listview.dart';
 import 'package:provider/provider.dart';
 
 class WeightScreen extends StatelessWidget {

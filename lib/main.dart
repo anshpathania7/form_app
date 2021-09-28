@@ -2,8 +2,7 @@ import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:form_app/provider/auth_provider.dart';
 import 'package:form_app/provider/weight_provider.dart';
-import 'package:form_app/screen/auth_screen.dart';
-import 'package:form_app/screen/startup_screen.dart';
+import 'package:form_app/screen/auth/auth_wrapper_screen.dart';
 import 'package:provider/provider.dart';
 
 void main() async {
@@ -31,7 +30,7 @@ class MyApp extends StatelessWidget {
         theme: ThemeData(
           primarySwatch: Colors.blue,
         ),
-        home: const StartupScreen(),
+        home: const AuthWrapperScreen(),
       ),
     );
   }
