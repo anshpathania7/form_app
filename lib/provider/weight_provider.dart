@@ -30,7 +30,6 @@ class WeightProvider extends ChangeNotifier {
       allWeightEntries = await _weightRepository.getAllWeightEntries();
       _updateSuccessState = true;
     } catch (e) {
-      print(e);
       _updateSuccessState = false;
     } finally {
       _updateLoadingStatus = false;

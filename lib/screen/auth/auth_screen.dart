@@ -69,18 +69,10 @@ class _AuthScreenState extends State<AuthScreen> {
                           children: [
                             TextButton(
                               onPressed: () async {
-                                final wasSuccess =
-                                    await context.read<AuthProvider>().signIn(
-                                          email: _emailController.text,
-                                          password: _passwordController.text,
-                                        );
-                                if (wasSuccess) {
-                                  Navigator.of(context)
-                                    ..pop()
-                                    ..push(MaterialPageRoute(
-                                        builder: (context) =>
-                                            const WeightScreen()));
-                                }
+                                await context.read<AuthProvider>().signIn(
+                                      email: _emailController.text,
+                                      password: _passwordController.text,
+                                    );
                               },
                               style: TextButton.styleFrom(
                                 backgroundColor: Colors.blue,
@@ -100,18 +92,10 @@ class _AuthScreenState extends State<AuthScreen> {
                             ),
                             TextButton(
                               onPressed: () async {
-                                final wasSuccess =
-                                    await context.read<AuthProvider>().signUp(
-                                          email: _emailController.text,
-                                          password: _passwordController.text,
-                                        );
-                                if (wasSuccess) {
-                                  Navigator.of(context)
-                                    ..pop()
-                                    ..push(MaterialPageRoute(
-                                        builder: (context) =>
-                                            const WeightScreen()));
-                                }
+                                await context.read<AuthProvider>().signUp(
+                                      email: _emailController.text,
+                                      password: _passwordController.text,
+                                    );
                               },
                               style: TextButton.styleFrom(
                                 shape: const RoundedRectangleBorder(
