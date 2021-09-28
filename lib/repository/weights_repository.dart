@@ -55,7 +55,7 @@ class WeightRepository {
         .collection('weightEntries')
         .orderBy('createdAt', descending: true)
         .get(
-          const GetOptions(source: Source.serverAndCache),
+          const GetOptions(source: Source.server),
         );
     final allWeightList = List<WeightModel>.from(
       snapshots.docs.map(
