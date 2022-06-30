@@ -1,9 +1,7 @@
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
-import 'package:form_app/provider/auth_provider.dart';
-import 'package:form_app/provider/weight_provider.dart';
-import 'package:form_app/screen/auth/auth_wrapper_screen.dart';
-import 'package:provider/provider.dart';
+import 'package:form_app/screen/home/home_screen.dart';
+import 'package:get/get.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -16,22 +14,12 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MultiProvider(
-      providers: [
-        ChangeNotifierProvider(
-          create: (context) => AuthProvider(context),
-        ),
-        ChangeNotifierProvider(
-          create: (context) => WeightProvider()..loadAllWeightEntries(),
-        ),
-      ],
-      child: MaterialApp(
-        title: 'Flutter Demo',
-        theme: ThemeData(
-          primarySwatch: Colors.blue,
-        ),
-        home: const AuthWrapperScreen(),
+    return GetMaterialApp(
+      title: 'Flutter Demo',
+      theme: ThemeData(
+        primarySwatch: Colors.blue,
       ),
+      home: const HomeScreen(),
     );
   }
 }
